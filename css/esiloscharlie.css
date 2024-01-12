@@ -1,0 +1,15 @@
+
+
+.iconosredes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#logofooter{
+    width: 100%;
+}
+
+#textologofooter{
+    width: 100%;
+    text-align: center;
+}
