@@ -5719,7 +5719,7 @@
 		}
 	}
 	#Header_wrapper, #Intro {
-		background-color: #f9d453;
+		background-color: EFFFFB
 	}
 	#Subheader {
 		background-color: rgba(246, 246, 246, 1);
@@ -5842,10 +5842,10 @@
 		}
 	}
 	#Header .top_bar_left, .header-classic #Top_bar, .header-plain #Top_bar, .header-stack #Top_bar, .header-split #Top_bar, .header-fixed #Top_bar, .header-below #Top_bar, #Header_creative, #Top_bar #menu, .sticky-tb-color #Top_bar.is-sticky {
-		background-color: #fadd75;
+		background-color: #EFFFFB;
 	}
 	#Top_bar .wpml-languages a.active, #Top_bar .wpml-languages ul.wpml-lang-dropdown {
-		background-color: #fadd75;
+		background-color: #EFFFFB;
 	}
 	#Top_bar .top_bar_right:before {
 		background-color: #e3e3e3;
@@ -5927,8 +5927,8 @@
 		background: transparent;
 	}
 	#Side_slide {
-		background-color: #fadd75;
-		border-color: #fadd75;
+		background-color: #EFFFFB;
+		border-color: #EFFFFB;
 	}
 	#Side_slide, #Side_slide .search-wrapper input.field, #Side_slide a:not(.action_button), #Side_slide #menu ul li.submenu .menu-toggle {
 		color: #111111;

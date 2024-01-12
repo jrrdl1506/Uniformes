@@ -1,0 +1,80 @@
+:root {
+    --white-1:#EFFFFB;
+    --green-1:#50D890;
+    --blue-1:#4F98CA;
+    --black-1:#272727;
+}
+
+
+/* CLASES UTILITARIAS */
+.flex{
+    display: flex;
+}
+
+
+.flex-c{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-sa{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-sb{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-cont img{
+    height: 50px;;
+
+}
+
+/* FONDOS */
+
+.bg-white-1{
+    background-color: var(--white-1);
+}
+
+.bg-black-1{
+    background-color: var(--black-1);
+}
+
+.bg-blue-1{
+    background-color: var(--blue-1);
+}
+
+.bg-white-1{
+    background-color:var(--white-1);
+}
+
+/* TEXTOS */
+
+.txt-c{
+    text-align: center;
+}
+
+.txt-white-sh{
+    color: var(--white-1)!important;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+.txt-white{
+    color: var(--white-1)!important;
+  
+}
+
+.img-cont{
+    width: 200px !important;
+    height: 200px !important;
+    background-size: cover;
+}
