@@ -126,3 +126,25 @@
 .h{
     height: 250px !important;
 }
+
+
+
+.flex-cualidades{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   
+}
+
+
+.flex-cualidades i{
+    font-size: 40px;
+}
+.flex-cualidades div{
+    transition: all ease 0.3s;
+}
+
+.flex-cualidades div:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}

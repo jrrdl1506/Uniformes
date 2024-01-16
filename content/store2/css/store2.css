@@ -5797,7 +5797,7 @@
 	}
 	.button-stroke .button_theme, .button-stroke .button_theme .button_icon i, .button-stroke button, .button-stroke input[type="submit"], .button-stroke input[type="reset"], .button-stroke input[type="button"], .button-stroke .woocommerce #respond input#submit, .button-stroke .woocommerce a.button:not(.default), .button-stroke .woocommerce button.button, .button-stroke.woocommerce input.button {
 		border-color: #eb3c70;
-		color: #eb3c70 !important;
+		color: #50D890!important;
 	}
 	.button-stroke .button_theme:hover, .button-stroke button:hover, .button-stroke input[type="submit"]:hover, .button-stroke input[type="reset"]:hover, .button-stroke input[type="button"]:hover {
 		background-color: #eb3c70;
@@ -6049,7 +6049,7 @@
 		background-color: #eb3c70;
 	}
 	a:hover.icon_bar {
-		color: #eb3c70 !important;
+		color: #50D890!important;
 	}
 	a.content_link, a:hover.content_link {
 		color: #eb3c70;
@@ -6146,13 +6146,13 @@
 		color: #000;
 	}
 	.woocommerce span.onsale, .shop_slider .shop_slider_ul li .item_wrapper span.onsale {
-		border-top-color: #eb3c70 !important;
+		border-top-color: #50D890!important;
 	}
 	.woocommerce span.onsale i, .shop_slider .shop_slider_ul li .item_wrapper span.onsale i {
 		color: white;
 	}
 	.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
-		border-color: #eb3c70 !important;
+		border-color: #50D890!important;
 	}
 	@media only screen and ( min-width: 768px) {
 		.header-semi #Top_bar:not(.is-sticky) {
