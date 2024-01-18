@@ -192,6 +192,7 @@
     justify-content: center;
     align-items: center;
     overflow: scroll;
+    height: 100%;
 
 }
 
@@ -212,7 +213,7 @@
 }
 
 .imagen{
-    max-width: 100%;   /* Establece el ancho máximo de la imagen como el 100% del contenedor */
-    height: auto;
+    max-height: 100%;
+   
 }
 
