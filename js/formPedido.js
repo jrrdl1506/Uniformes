@@ -3,10 +3,10 @@ function obtenerValores() {
     var contacto_nombre = document.getElementById('contacto_nombre').value;
     var contacto_email = document.getElementById('contacto_email').value;
     var contacto_telefono = document.getElementById('contacto_telefono').value;
-    var pedido_tipo_tela = document.getElementById('pedido_tipo_tela').value;
+    // var pedido_tipo_tela = document.getElementById('pedido_tipo_tela').value;
     var pedido_cantidad = document.getElementById('pedido_cantidad').value;
     var pedido_talla = document.getElementById('pedido_talla').value;
-    var pedido_texto_bordado = document.getElementById('pedido_texto_bordado').value;
+    // var pedido_texto_bordado = document.getElementById('pedido_texto_bordado').value;
     var pedido_color_tela = document.getElementById('pedido_color_tela').value;
     var pedido_foto_bordado = document.getElementById('pedido_foto_bordado').value;
     var pedido_asunto = document.getElementById('pedido_asunto').value;
@@ -20,10 +20,10 @@ function obtenerValores() {
             "telefono": contacto_telefono
         },
         "pedido": {
-            "tipoTela": pedido_tipo_tela,
+            // "tipoTela": pedido_tipo_tela,
             "cantidad": pedido_cantidad,
             "talla": pedido_talla,
-            "textoBordado": pedido_texto_bordado,
+            // "textoBordado": pedido_texto_bordado,
             "colorTela": pedido_color_tela,
             "fotoBordado": pedido_foto_bordado
         },
@@ -43,4 +43,11 @@ function obtenerValores() {
 document.getElementById('reused_form').addEventListener('submit', function (e) {
     e.preventDefault(); // Evitar el envío del formulario predeterminado
     obtenerValores();
+    Swal.fire({
+        icon: 'success',
+        title: 'Hemos recibido tu pedido',
+        text: 'Te contestaremos lo antes posible',
+        
+    });
+
 });

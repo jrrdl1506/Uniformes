@@ -47,7 +47,7 @@
 											<li> <a href="products.html"><span>CATÁLOGO</span></a> </li>
 											<li> <a href="about.html"><span>NOSOTROS</span></a> </li>
 											<li> <a href="blog.html"><span>SERVICIOS</span></a> </li>
-											<li class="current-menu-item"> <a href="contact.html"><span>CONTACTO</span></a> </li>
+											<li class="current-menu-item"> <a href="contact.html"><span>COTIZACIÓN</span></a> </li>
 										</ul>
 									</nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a> </div>
 							</div>
@@ -59,79 +59,48 @@
 		</div>
 
 		
-		<div id="Content">
-			
-			<div class="section" style="padding-top:150px;padding-bottom:50px">
-				<div class="section mcb-section no-margin-h no-margin-v full-width">
-					<div class="row">
-						<div class="col-12">
-							<div id="sc_gallery-7985" class='gallery galleryid-6 gallery-columns-6 gallery-size-thumbnail file flat'>
-								<dl class="gallery-item"> <dt class='gallery-icon landscape'>
-																	<a href="images/store2-home-gallery-6.jpg"><img width="600" height="600" src="../../img/Ventas/blus.webp" class="attachment-thumbnail size-thumbnail" loading="lazy"></a>
-																</dt> </dl>
-								<dl class="gallery-item"> <dt class='gallery-icon landscape'>
-																	<a href="images/store2-home-gallery-1.jpg"><img width="600" height="600" src="../../img/Ventas/chalec.webp" class="attachment-thumbnail size-thumbnail" loading="lazy"></a>
-																</dt> </dl>
-								<dl class="gallery-item"> <dt class='gallery-icon landscape'>
-																	<a href="images/store2-home-gallery-2.jpg"><img width="600" height="600" src="../../img/Ventas/cami2.jpg" class="attachment-thumbnail size-thumbnail" loading="lazy"></a>
-																</dt> </dl>
-								<dl class="gallery-item"> <dt class='gallery-icon landscape'>
-																	<a href="images/store2-home-gallery-3.jpg"><img width="600" height="600" src="../../img/Ventas/est.webp" class="attachment-thumbnail size-thumbnail" loading="lazy"></a>
-																</dt> </dl>
-								<dl class="gallery-item"> <dt class='gallery-icon landscape'>
-																	<a href="images/store2-home-gallery-4.jpg"><img width="600" height="600" src="../../img/Ventas/sudo.webp" class="attachment-thumbnail size-thumbnail" loading="lazy"></a>
-																</dt> </dl>
-								<dl class="gallery-item"> <dt class='gallery-icon landscape'>
-																	<a href="images/store2-home-gallery-5.jpg"><img width="600" height="600" src="../../img/Ventas/cap.jpg" class="attachment-thumbnail size-thumbnail" loading="lazy"></a>
-																</dt> </dl>
-								<br style="clear: both"> </div>
-						</div>
-					</div>
-				</div>
-				<div class="container">
-					<div class="row">
-						<div class="col-12 text-center">
-							<br>
-							<h1>Cotiza tu pedido</h1> </div>
-					</div>
-				</div>
+		<div id="Content" style="margin-top: 100px;">
+			<div class="product-name">
+				<h4>Nombre del producto</h4>
 			</div>
+			
 			<div class="flex-c">
+				
 				<div class="product-display">
 					<div class="product-photos">
 
-						<div class="product-photos-min">
-							<div class="photo-min">
-								<img src="../../img/placeholder/1.webp">
+						<div class="product-photos-min" id="photo-cont">
+							<div class="photo-min" >
+								<img src="../../img/placeholder/1.webp" id="cont1">
 							</div>
-							<div class="photo-min">
-								<img src="../../img/placeholder/2.webp">
+							<div class="photo-min" >
+								<img src="../../img/placeholder/2.webp" id="cont2">
 							</div>
-							<div class="photo-min">
-								<img src="../../img/placeholder/3.webp">
+							<div class="photo-min" >
+								<img src="../../img/placeholder/3.webp" id="cont3">
 							</div>
-							<div class="photo-min">
-								<img src="../../img/placeholder/4.webp">
+							<div class="photo-min" >
+								<img src="../../img/placeholder/4.webp" id="cont4">
 							</div>
-							<div class="photo-min">
-								<img src="../../img/placeholder/1.webp">
+							<div class="photo-min" >
+								<img src="../../img/placeholder/1.webp"  id="cont5">
 							</div>
 							
 
 						</div>
 						<div class="product-photos-max">
 
-							<img class="imagen" src="../../img/placeholder/1.webp">
+							<img class="imagen" src="../../img/placeholder/1.webp" id="foto-main">
 						</div>
 					</div>
 					<div class="product-info">
 						<div class="info-panel">
 							<div>
-								<h4>Nombre del Producto</h4	>
+								<h4>Nombre del Producto</h4>
 							</div>
 							<div>
-								<select style="width: 100%;">
-									<option>Color del producto</option>
+								<select id="pedido_color_tela" style="width: 100%;">
+									<option>Color Tela</option>
 									<option>Azul</option>
 									<option>Gris</option>
 									<option>Negro</option>
@@ -140,37 +109,30 @@
 							</div>
 							<br>
 							<div style="display: flex; justify-content: space-between;">
-								<p>Talla:<select>
-									<option>XS</option>
-									<option>S</option>
-									<option>M</option>
-									<option>L</option>
-									<option>XL</option>
-									<option>2XL</option>
-									<option>3XL</option>
-								</select></p>
-								<p>Unidades:<input type="number" style="width: 50px;">
-									
-								
+								<p>Talla:
+									<select id="pedido_talla">
+										<option>XS</option>
+										<option>S</option>
+										<option>M</option>
+										<option>L</option>
+										<option>XL</option>
+										<option>2XL</option>
+										<option>3XL</option>
+									</select>
+								</p>
+								<p>Unidades:<input type="number" id="pedido_cantidad" style="width: 50px;"></p>
 							</div>
-							<div>
-								<input type="text" style="width: 100%;" placeholder="Texto del bordado">
-							</div>
+							
 							<br>
-
 							<div style="display: flex; justify-content: center;">
-								
-								
+								<!-- Aquí podrías agregar más elementos con IDs -->
 							</div>
-
 							<div style="display: flex; justify-content: center;">
-								<p>Imagen del bordado:<br><input type="file"></p>
-								
+								<p>Imagen del bordado:<br><input type="file" id="pedido_foto_bordado"></p>
 							</div>
-							
-							
 						</div>
 					</div>
+					
 				</div>
 				
 			</div>
@@ -181,7 +143,7 @@
 					<div class="row justify-content-md-center text-center">
 						<div class="col-12">
 							<div class="text-center">
-								<h3>Formulario de cotización</h3> </div>
+								<h4>Datos de contacto</h4> </div>
 						</div>
 						<div class="col-12">
 							<hr class="no_line" style="margin:0 auto 20px"> </div>
@@ -189,7 +151,7 @@
 							<div id="contactWrapper">
 								<div id="contactform">
 									<form method="post" id="reused_form">
-										<h5>Datos de contacto</h5>
+										<!-- <h5>Datos de contacto</h5> -->
 										<!-- One Second (1/2) Column -->
 										<div class="column one-second">
 											<input placeholder="Nombre" id="contacto_nombre" type="text" name="Name" required maxlength="50">
@@ -202,9 +164,9 @@
 											<input placeholder="Teléfono" id="contacto_telefono" type="text" name="Subject" maxlength="50">
 										</div>
 									
-										<h5>Especificaciones del pedido</h5>
+										<!-- <h5>Especificaciones del pedido</h5> -->
 										<!-- One Second (1/2) Column -->
-										<div class="column one-second">
+										<!-- <div class="column one-second">
 											<input placeholder="Tipo de tela" id="pedido_tipo_tela" type="text" name="Email" required maxlength="50">
 										</div>
 										<div class="column one-second">
@@ -221,9 +183,9 @@
 										</div>
 										<div class="column one-second">
 											<p>Foto del bordado:</p><input placeholder="Dimensiones" id="pedido_foto_bordado" type="file" name="Email" required maxlength="50">
-										</div>
+										</div> -->
 									
-										<h5>Información del pedido</h5>
+										
 										<div class="column one">
 											<input placeholder="Asunto" id="pedido_asunto" type="text" name="Subject" maxlength="50">
 										</div>
@@ -351,6 +313,11 @@
 	<script src="../../js/translate3d.js"></script>
 	<script src="../../js/scripts.js"></script>
 	<script src="../../phpmailer/form.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10/dist/sweetalert2.all.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10/dist/sweetalert2.min.css" rel="stylesheet">
+<script src="../../js/el_script.js"></script>
+
 </body>
 
 </html>
