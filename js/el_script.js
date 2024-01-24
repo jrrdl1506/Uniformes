@@ -11,6 +11,8 @@
 // });
 
 
+
+
 document.getElementById("photo-cont").addEventListener("click", function(event) {
     // Verificar si el elemento clickeado tiene la clase "contenedor-dinamico"
     if (event.target) {

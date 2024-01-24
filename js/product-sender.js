@@ -1,12 +1,6 @@
-function guardarInformacion() {
-    console.log("Hola");
-    // // Obtener información del contenedor
-    // var contenedor = document.getElementById('miContenedor');
-    // var id = contenedor.id;
-    // var src = contenedor.querySelector('img').src;
-
+function guardarInformacion(producto) {
+    
     // // Guardar información en localStorage
-    // localStorage.setItem('idGuardado', id);
-    // localStorage.setItem('srcGuardado', src);
+    localStorage.setItem('Elemento', producto);
     window.location.href = 'contact.html';
 }

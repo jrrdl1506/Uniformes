@@ -13,3 +13,7 @@
     width: 100%;
     text-align: center;
 }
+
+.wp-post-image{
+    object-fit: cover;
+}
