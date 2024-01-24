@@ -60,8 +60,13 @@
 
 		
 		<div id="Content" style="margin-top: 100px;">
+
+			<div id="formulario">
+
+			</div>
+
 			<div class="product-name">
-				<h4>Nombre del producto</h4>
+				<h4 class="nombre-producto">Nombre del producto</h4>
 			</div>
 			
 			<div class="flex-c">
@@ -96,7 +101,7 @@
 					<div class="product-info">
 						<div class="info-panel">
 							<div>
-								<h4>Nombre del Producto</h4>
+								<h4 class="nombre-producto">Nombre del Producto</h4>
 							</div>
 							<div>
 								<select id="pedido_color_tela" style="width: 100%;">
@@ -125,7 +130,7 @@
 							
 							<br>
 							<div style="display: flex; justify-content: center;">
-								<!-- Aquí podrías agregar más elementos con IDs -->
+								<!-- Aquí podrías agregar más elementos con IDs --->
 							</div>
 							<div style="display: flex; justify-content: center;">
 								<p>Imagen del bordado:<br><input type="file" id="pedido_foto_bordado"></p>
@@ -303,6 +308,97 @@
 	</div>
 	<div id="body_overlay"></div>
 	<!-- JS -->
+	<script>
+		var valorRecuperado = localStorage.getItem('Elemento');
+		console.log(valorRecuperado);
+
+		var miDiv = document.getElementById("formulario");
+
+		switch (valorRecuperado) {
+			case 'formal':
+				document.getElementById("cont1").src = "../../img/placeholder/f-1.webp";
+				document.getElementById("cont2").src = "../../img/placeholder/f-2.webp";
+				document.getElementById("cont3").src = "../../img/placeholder/f-3.webp";
+				document.getElementById("cont4").src = "../../img/placeholder/f-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/f-1.webp";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/f-1.webp";
+				
+				document.getElementsByClassName("nombre-producto").innerText = 'Uniformes formales';
+
+
+				// miDiv.innerHTML = `
+				
+				
+				// <div class="flex-c">
+					
+				// 	<div class="product-display">
+				// 		<div class="product-info">
+				// 			<div class="info-panel">
+				// 				<div>
+				// 					<h4>Nombre del Producto</h4>
+				// 				</div>
+				// 				<div>
+				// 					<select id="pedido_color_tela" style="width: 100%;">
+				// 						<option>Color Tela</option>
+				// 						<option>Azul</option>
+				// 						<option>Gris</option>
+				// 						<option>Negro</option>
+				// 						<option>Blanco</option>
+				// 					</select>
+				// 				</div>
+				// 				<br>
+				// 				<div style="display: flex; justify-content: space-between;">
+				// 					<p>Talla:
+				// 						<select id="pedido_talla">
+				// 							<option>XS</option>
+				// 							<option>S</option>
+				// 							<option>M</option>
+				// 							<option>L</option>
+				// 							<option>XL</option>
+				// 							<option>2XL</option>
+				// 							<option>3XL</option>
+				// 						</select>
+				// 					</p>
+				// 					<p>Unidades:<input type="number" id="pedido_cantidad" style="width: 50px;"></p>
+				// 				</div>
+								
+				// 				<br>
+				// 				<div style="display: flex; justify-content: center;">
+				// 					<!-- Aquí podrías agregar más elementos con IDs -->
+				// 				</div>
+				// 				<div style="display: flex; justify-content: center;">
+				// 					<p>Imagen del bordado:<br><input type="file" id="pedido_foto_bordado"></p>
+				// 				</div>
+				// 			</div>
+				// 		</div>
+						
+				// 	</div>
+					
+				// </div>`;
+				break;
+
+			case 'caso2':
+				// Código HTML para el segundo caso
+				body.innerHTML = `
+					<form>
+						<label for="campo2">Campo 2:</label>
+						<input type="text" id="campo2" name="campo2">
+						<button type="submit">Enviar</button>
+					</form>`;
+				break;
+
+			// Agregar más casos según sea necesario
+
+			default:
+				// Código HTML por defecto o manejo de error
+				body.innerHTML = `
+					<p>No se encontraron datos recuperados válidos.</p>`;
+				break;
+		}
+
+
+	</script>
 	<script src="../../js/formPedido.js"></script>
 	<script src="../../js/jquery-3.6.0.min.js"></script>
 	<script src="../../js/jquery-migrate-3.4.0.min.js"></script>
