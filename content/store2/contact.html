@@ -60,11 +60,6 @@
 
 		
 		<div id="Content" style="margin-top: 100px;">
-
-			<div id="formulario">
-
-			</div>
-
 			<div class="product-name">
 				<h4 class="nombre-producto">Nombre del producto</h4>
 			</div>
@@ -103,38 +98,41 @@
 							<div>
 								<h4 class="nombre-producto">Nombre del Producto</h4>
 							</div>
-							<div>
-								<select id="pedido_color_tela" style="width: 100%;">
-									<option>Color Tela</option>
-									<option>Azul</option>
-									<option>Gris</option>
-									<option>Negro</option>
-									<option>Blanco</option>
-								</select>
-							</div>
-							<br>
-							<div style="display: flex; justify-content: space-between;">
-								<p>Talla:
-									<select id="pedido_talla">
-										<option>XS</option>
-										<option>S</option>
-										<option>M</option>
-										<option>L</option>
-										<option>XL</option>
-										<option>2XL</option>
-										<option>3XL</option>
+							<div id="formulario"> 
+								<div>
+									<select id="pedido_color_tela" style="width: 100%;">
+										<option>Color Tela</option>
+										<option>Azul</option>
+										<option>Gris</option>
+										<option>Negro</option>
+										<option>Blanco</option>
 									</select>
-								</p>
-								<p>Unidades:<input type="number" id="pedido_cantidad" style="width: 50px;"></p>
+								</div>
+								<br>
+								<div style="display: flex; justify-content: space-between;">
+									<p>Talla:
+										<select id="pedido_talla">
+											<option>XS</option>
+											<option>S</option>
+											<option>M</option>
+											<option>L</option>
+											<option>XL</option>
+											<option>2XL</option>
+											<option>3XL</option>
+										</select>
+									</p>
+									<p>Unidades:<input type="number" id="pedido_cantidad" style="width: 50px;"></p>
+								</div>
+								
+								<br>
+								<div style="display: flex; justify-content: center;">
+									<!-- Aquí podrías agregar más elementos con IDs --->
+								</div>
+								<div style="display: flex; justify-content: center;">
+									<p>Imagen del bordado:<br><input type="file" id="pedido_foto_bordado"></p>
+								</div>
 							</div>
 							
-							<br>
-							<div style="display: flex; justify-content: center;">
-								<!-- Aquí podrías agregar más elementos con IDs --->
-							</div>
-							<div style="display: flex; justify-content: center;">
-								<p>Imagen del bordado:<br><input type="file" id="pedido_foto_bordado"></p>
-							</div>
 						</div>
 					</div>
 					
@@ -331,16 +329,6 @@
 				}
 
 				// miDiv.innerHTML = `
-				
-				
-				// <div class="flex-c">
-					
-				// 	<div class="product-display">
-				// 		<div class="product-info">
-				// 			<div class="info-panel">
-				// 				<div>
-				// 					<h4>Nombre del Producto</h4>
-				// 				</div>
 				// 				<div>
 				// 					<select id="pedido_color_tela" style="width: 100%;">
 				// 						<option>Color Tela</option>
@@ -368,30 +356,282 @@
 								
 				// 				<br>
 				// 				<div style="display: flex; justify-content: center;">
-				// 					<!-- Aquí podrías agregar más elementos con IDs -->
+				// 					<!-- Aquí podrías agregar más elementos con IDs --->
 				// 				</div>
 				// 				<div style="display: flex; justify-content: center;">
 				// 					<p>Imagen del bordado:<br><input type="file" id="pedido_foto_bordado"></p>
-				// 				</div>
-				// 			</div>
-				// 		</div>
-						
-				// 	</div>
+				// 				</div>`;
+				break;
+
+			case 'filipinas':
+				document.getElementById("cont1").src = "../../img/placeholder/fi-1.webp";
+				document.getElementById("cont2").src = "../../img/placeholder/fi-2.webp";
+				document.getElementById("cont3").src = "../../img/placeholder/fi-3.webp";
+				document.getElementById("cont4").src = "../../img/placeholder/fi-4.webp";
+				document.getElementById("cont5").src = "../../img/placeholder/fi-1.webp";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/fi-1.webp";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Filipinas';
+				}
 					
-				// </div>`;
 				break;
 
-			case 'caso2':
-				// Código HTML para el segundo caso
-				body.innerHTML = `
-					<form>
-						<label for="campo2">Campo 2:</label>
-						<input type="text" id="campo2" name="campo2">
-						<button type="submit">Enviar</button>
-					</form>`;
+
+			case 'deportivo':
+				document.getElementById("cont1").src = "../../img/placeholder/d-1.webp";
+				document.getElementById("cont2").src = "../../img/placeholder/d-2.webp";
+				document.getElementById("cont3").src = "../../img/placeholder/d-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/d-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/d-5.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/d-1.webp";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Conjunto deportivo';
+				}
+					
 				break;
 
-			// Agregar más casos según sea necesario
+
+			case 'ejecutivo':
+				document.getElementById("cont1").src = "../../img/placeholder/e-1.jpg";
+				document.getElementById("cont2").src = "../../img/placeholder/e-2.webp";
+				document.getElementById("cont3").src = "../../img/placeholder/e-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/e-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/e-1.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/e-1.jpg";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Conjunto ejecutivo';
+				}
+					
+				break;
+
+
+			case 'laboratorio':
+				document.getElementById("cont1").src = "../../img/placeholder/l-1.jpg";
+				document.getElementById("cont2").src = "../../img/placeholder/l-2.jpg";
+				document.getElementById("cont3").src = "../../img/placeholder/l-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/l-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/l-1.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/l-1.jpg";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Batas de laboratorio';
+				}
+					
+				break;
+
+
+			case 'medico':
+				document.getElementById("cont1").src = "../../img/placeholder/m-1.jpg";
+				document.getElementById("cont2").src = "../../img/placeholder/m-2.jpg";
+				document.getElementById("cont3").src = "../../img/placeholder/m-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/m-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/m-5.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/m-1.jpg";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Uniforme médico';
+				}
+					
+				break;
+
+
+			case 'industrial':
+				document.getElementById("cont1").src = "../../img/placeholder/o-1.webp";
+				document.getElementById("cont2").src = "../../img/placeholder/o-2.webp";
+				document.getElementById("cont3").src = "../../img/placeholder/o-3.webp";
+				document.getElementById("cont4").src = "../../img/placeholder/o-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/o-5.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/o-1.webp";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Oberol industrial';
+				}
+					
+				break;
+
+
+			case 'chalecos':
+				document.getElementById("cont1").src = "../../img/placeholder/c-1.jpg";
+				document.getElementById("cont2").src = "../../img/placeholder/c-2.jpg";
+				document.getElementById("cont3").src = "../../img/placeholder/c-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/c-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/c-5.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/c-1.jpg";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Chalecos';
+				}
+					
+				break;
+
+
+			case 'seguridad':
+				document.getElementById("cont1").src = "../../img/placeholder/s-1.webp";
+				document.getElementById("cont2").src = "../../img/placeholder/s-2.webp";
+				document.getElementById("cont3").src = "../../img/placeholder/s-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/s-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/s-5.webp";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/s-1.webp";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Uniforme de seguridad';
+				}
+					
+				break;
+
+
+			case 'blusas':
+				document.getElementById("cont1").src = "../../img/placeholder/b-1.webp";
+				document.getElementById("cont2").src = "../../img/placeholder/b-2.webp";
+				document.getElementById("cont3").src = "../../img/placeholder/b-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/b-4.webp";
+				document.getElementById("cont5").src = "../../img/placeholder/b-5.webp";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/b-1.webp";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Blusas';
+				}
+					
+				break;
+
+
+			case 'camisas':
+				document.getElementById("cont1").src = "../../img/placeholder/ca-1.webp";
+				document.getElementById("cont2").src = "../../img/placeholder/ca-2.jpg";
+				document.getElementById("cont3").src = "../../img/placeholder/ca-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/ca-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/ca-5.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/ca-1.webp";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Camisas';
+				}
+					
+				break;
+
+
+			case 'pantalones':
+				document.getElementById("cont1").src = "../../img/placeholder/p-1.jpg";
+				document.getElementById("cont2").src = "../../img/placeholder/p-2.webp";
+				document.getElementById("cont3").src = "../../img/placeholder/p-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/p-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/p-5.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/p-1.jpg";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Pantalones';
+				}
+					
+				break;
+
+
+			case 'escolares':
+				document.getElementById("cont1").src = "../../img/placeholder/es-1.jpg";
+				document.getElementById("cont2").src = "../../img/placeholder/es-2.webp";
+				document.getElementById("cont3").src = "../../img/placeholder/es-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/es-4.webp";
+				document.getElementById("cont5").src = "../../img/placeholder/es-5.webp";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/es-1.jpg";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Uniformes escolares';
+				}
+					
+				break;
+
+
+			case 'gorras':
+				document.getElementById("cont1").src = "../../img/placeholder/g-1.webp";
+				document.getElementById("cont2").src = "../../img/placeholder/g-2.jpg";
+				document.getElementById("cont3").src = "../../img/placeholder/g-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/g-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/g-5.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/g-1.webp";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Diseño de gorras';
+				}
+					
+				break;
+
+
+
+			case 'playeras':
+				document.getElementById("cont1").src = "../../img/placeholder/pla-1.jpg";
+				document.getElementById("cont2").src = "../../img/placeholder/pla-2.jpg";
+				document.getElementById("cont3").src = "../../img/placeholder/pla-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/pla-4.jpg";
+				document.getElementById("cont5").src = "../../img/placeholder/pla-5.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/pla-1.jpg";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Playeras';
+				}
+					
+				break;
+
+
+			case 'delantales':
+				document.getElementById("cont1").src = "../../img/placeholder/del-1.webp";
+				document.getElementById("cont2").src = "../../img/placeholder/del-2.webp";
+				document.getElementById("cont3").src = "../../img/placeholder/del-3.jpg";
+				document.getElementById("cont4").src = "../../img/placeholder/del-4.webp";
+				document.getElementById("cont5").src = "../../img/placeholder/del-5.jpg";
+
+				document.getElementById("foto-main").src = "../../img/placeholder/del-1.webp";
+				
+
+				var elementos = document.getElementsByClassName("nombre-producto");
+				for (var i = 0; i < elementos.length; i++) {
+					elementos[i].innerText = 'Delantales';
+				}
+					
+				break;
 
 			default:
 				// Código HTML por defecto o manejo de error
